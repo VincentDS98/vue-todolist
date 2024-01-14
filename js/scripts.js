@@ -24,9 +24,9 @@ createapp({
         };
     },
     methods: {
-        addTodo(newTask){
+        addTodo(){
             const newTodoObj = {
-                text: newTask,
+                text: this.newTodo,
                 done: false
             };
 
