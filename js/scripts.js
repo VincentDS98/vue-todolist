@@ -25,10 +25,13 @@ createapp({
     },
     methods: {
         addTodo(){
-            const newTodoObj = {
+            if(this.newTodo>0){
+                const newTodoObj = {
                 text: this.newTodo,
                 done: false
             };
+            }
+            
 
             this.todos.push(newTodoObj);
         },
